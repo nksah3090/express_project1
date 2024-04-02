@@ -11,7 +11,7 @@ body{
     
 }
 p{
-    color:red;
+    color:black;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -20,26 +20,32 @@ p{
     flex-grow: 1;
 
 }
-footer{
-    color: green;
+footer {
     border-top: 1px solid black;
     margin-top:16px;
     padding: 16px 0;
     text-align: center;
+    
+}
+
+footer > p {
+    color: green !important;
 }
 
 header{
     margin-top: 16px;
     margin-bottom: 30px;
     text-align: center;
+    
 
 }
 h1{
-    font-size:64px;
-    margin-bottom: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:64px !important;
+    margin-bottom: 16px !important;
+    
     
 }
+
 header a {
     color:blue;
     margin-right: 16px;
