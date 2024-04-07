@@ -15,20 +15,18 @@
 
 <body style="background-color: pink;">
     {{>header}}
-    <p>Use this site to fulfill your need and requirement as well !!!</p>
+    <p>Use this site to fulfill your need !!!</p>
     <div class="main-content">
         <div class="box">
-            {{!-- {{#each persons}}
-            {{>person person=.}}
-            {{/each}} --}}
-            <form action="/requirement" method="post">
-                <label>Name :</label>
-                <input type="text" placeholder="Enter your name" class="form-control">  
-                <label>Requirement :</label>
-                <input type="text" placeholder="Enter your requirement" class="form-control">
-                <label>Mobile No :</label>
-                <input type="text" placeholder="Enter your mobile number" class="form-control"><br>
-                <button type="button" id="btn1" class="btn btn-primary">SUBMIT</button>
+           
+            <form action="/data" method="post">
+                <label for="name">Name :</label>
+                <input required type="text" autocomplete="on" placeholder="Enter your name" class="form-control" id="name" name="name">  
+                <label for="need">Need :</label>
+                <input required type="text" placeholder="Enter your need" class="form-control" id="need" name="need">
+                <label for="mobile">Mobile No :</label>
+                <input required type="text" placeholder="Enter your mobile number" class="form-control" id="mobile" name="mobile"><br>
+                <button type="submit" id="btn1" class="btn btn-primary">SUBMIT</button>
 
 
             </form>
@@ -36,6 +34,7 @@
         </div>
     </div>
     {{>footer}}
+    
 </body>
 
 </html>
