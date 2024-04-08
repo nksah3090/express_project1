@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const fs = require('fs')
-const { name } = require('ejs')
+
 
 const addData = function (name, need, mobile) {
     const data = loadData();
